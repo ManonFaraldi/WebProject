@@ -78,7 +78,7 @@ require_once "includes/header.php";
 <br/><br/><br/>
 <div class="card col-sm-6 offset-sm-3 col-xs-12">
   <br/>
-    <h3> Déjà inscrit ? </h3>
+    <h3> Déjà inscrit.e ? </h3>
   <br/><br/>
 
   <a href="connexion.php">
