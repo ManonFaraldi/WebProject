@@ -22,7 +22,7 @@ if (!empty($_POST['username']) and !empty($_POST['password'])){
 ?>
 
 <html>
-test
+
 <?php 
 // A vérifier !!!!!
 $pageTitle = "Connexion";
