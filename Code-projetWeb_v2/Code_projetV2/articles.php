@@ -15,10 +15,12 @@ while ($obj = $resultat->fetch_object())
 {
 ?>
 <div class="card col-sm-9 offset-sm-3 col-xs-12">
-<?php
-printf ("%s (%s) %s", $obj->TITRE_ART, $obj->AUTEUR_ART,$obj->DATE_ART);
 
+<?php
+echo '<a href="articlestest.php?titre='.$obj->ID_ART.'">';
+printf ("%s (%s) %s", $obj->TITRE_ART, $obj->AUTEUR_ART,$obj->DATE_ART);
 ?>
+</a>
 <br/>
 </div>
 <br/>

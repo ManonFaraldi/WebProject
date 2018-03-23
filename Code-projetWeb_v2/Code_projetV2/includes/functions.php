@@ -13,6 +13,7 @@ function getUser($email,$password,$connexion){
     $query = "select * from user where MAIL_USER = '".$email."' AND PASSWORD_USER = '".$password."' AND ACTIF_USER = true;";
     $resultat = $connexion->query($query);
     if($resultat) $obj = $resultat->fetch_object();
+    $_SESSION['ID_USER'] = $obj->ID_USER;
     return $obj;
 
 }
