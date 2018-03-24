@@ -9,7 +9,7 @@
     <br/>
   <h3>Nouvel article</h3>
   <br/>
-  <form action="enregistre_article.php" method="POST">
+  <form action="enregistre_article.php"  enctype="multipart/form-data" method="POST">
    
         <input type="text" required
         class="form-control form__input"
@@ -17,7 +17,9 @@
         value=""
         />
     <br/><br/> 
-    
+
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <br/><br/>
     <textarea required rows="4"
         class="form-control form__input"
         id="resume" name="resume" placeholder="Résumé" value="">
@@ -35,7 +37,7 @@
     <br/><br/>
     <input type="hidden" name="action" value="join" />
 
-	<button type="submit" class="btn btn-default btn-block">Enregistrer</button>
+	<button type="submit" value="Upload Image" class="btn btn-default btn-block">Enregistrer</button>
 
        
   </form>

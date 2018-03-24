@@ -12,7 +12,7 @@ $today = date("Y-m-d");
 $sql = "insert into commentaires (ID_USER,ID_ART,DATE_COMM,TEXT_COMM) values ('".$_POST["user_commentaire"]."','".$_POST["id_article"]."','".$_POST["date_commentaire"]."','" .$_POST["contenu"]."')";
     $resultat = $connexion->query($sql);
     echo $sql;
-    //redirect("articles.php");
+    redirect('articlestest.php?titre='.$_POST["id_article"]);
 
 
 ?>

@@ -17,8 +17,8 @@ while ($obj = $resultat->fetch_object())
 ?>
                     <div class="col-xs-12 col-sm-4">
                         <div class="card">
-                          <?php echo '<a class="img-card" href="articles_lire.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
-                            <img src="https://res.cloudinary.com/m1717/image/upload/v1520348677/tfltoxojrtudnv5uppkv.jpg" />
+                          <?php echo '<a class="img-card" href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
+                            <?php echo '<img src= '.$obj->IMG_ART.' />' ; ?> 
                           </a>
                             <div class="card-content">
                                 <h4 class="card-title">
@@ -50,9 +50,22 @@ if (isset($_SESSION['role'])) {
 if ( $_SESSION['role'] == "MEMBRE" ||  $_SESSION['role'] == "MOD" ||  $_SESSION['role'] == "ADMIN")
 {
 ?>
-<a href="nouvel_article.php">
-  <button type="button" class="btn btn-default btn-block">Ajouter un article</button>
-  </a>
+<div class="container">
+    <a href="nouvel_article.php">
+        <button type="button" class="btn btn-default btn-block">
+        <?php if ( $_SESSION['role'] == "MEMBRE")
+        {
+        ?>
+            Proposer un article
+
+        <?php
+        }
+        else 
+        {
+        ?>Ajouter un article<?php } ?></button>
+    </a>
+
+</div>
 <?php
   }
 }

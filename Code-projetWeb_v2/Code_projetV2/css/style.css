@@ -8,9 +8,14 @@ div{
     font-weight: bold;
 }
 
+img{
+  display : block;
+  margin-left: auto;
+    margin-right: auto;
+}
 
 nav a {
-    margin-left:4em;
+    margin-left:3em;
     font-size:18;
     font-family:Roboto;
     font-weight: bold;
@@ -30,6 +35,21 @@ text-decoration:none;
 .bleu {color:#30a5af;}
 .rose2{color:#E00a63;}
 
+.auteur{
+  text-align: left;
+  color : #337072;
+
+}
+.date{
+  text-align: right;
+  color : #476b6d;
+
+}
+.titre{
+  text-align: center;
+  font-weight : bold;
+}
+
 .card {
     margin: 0 auto;
     float: none;
@@ -37,10 +57,19 @@ text-decoration:none;
     box-shadow: 0px 5px 25px #aaa;
     
 }
+
+.card-blue{
+  margin: 0 auto;
+  float: none;
+  border-top: 10px solid #30a5af;
+  box-shadow: 0px 5px 25px #aaa;
+  
+}
+
 .card_commentaire {
     margin: 0 auto;
     float: none;
-    border-top: 10px solid #0000FF;
+    border-top: 10px solid #2d3342;
     box-shadow: 0px 5px 25px #aaa;
     
 }
