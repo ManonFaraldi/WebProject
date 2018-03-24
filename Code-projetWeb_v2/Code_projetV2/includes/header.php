@@ -34,7 +34,7 @@
         }
     }else{
         ?>
-        <a class="bleu" href="../pages_phpconnexion.php" >Se connecter</a><br/>  
+        <a class="bleu" href="../pages_php/connexion.php" >Se connecter</a><br/>  
         <a class="rose2" href="../pages_php/inscription.php" >S'inscrire</a><br/>
 
         <?php
