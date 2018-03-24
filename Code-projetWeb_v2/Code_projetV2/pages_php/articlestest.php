@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "includes/functions.php"; 
-require_once "includes/header.php";
+require_once "../includes/functions.php"; 
+require_once "../includes/header.php";
 
 // Recupération de la liste des articles
 $query = "select * from articles where ID_ART='".$_GET["titre"]."'";
@@ -77,4 +77,4 @@ printf("%s", $obj->TEXT_COMM);
 </div>
 
 
-<?php require_once "includes/footer.php"; ?>
+<?php require_once "../includes/footer.php"; ?>

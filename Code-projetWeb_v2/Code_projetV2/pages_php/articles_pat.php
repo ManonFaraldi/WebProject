@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once "includes/functions.php"; 
-require_once "includes/header.php";
+require_once "../includes/functions.php"; 
+require_once "../includes/header.php";
 
 // Recupération de la liste des articles
 $query = "select * from articles order by DATE_ART desc";
@@ -70,6 +70,6 @@ if ( $_SESSION['role'] == "MEMBRE" ||  $_SESSION['role'] == "MOD" ||  $_SESSION[
   }
 }
 ?>
-<?php require_once "includes/footer.php"; ?>
+<?php require_once "../includes/footer.php"; ?>
 
 

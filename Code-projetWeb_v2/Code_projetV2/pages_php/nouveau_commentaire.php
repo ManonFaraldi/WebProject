@@ -1,5 +1,5 @@
 <?php session_start(); ?>
-<?php require_once "includes/header.php"; ?>
+<?php require_once "../includes/header.php"; ?>
 <?php $today = date("d.m.y");   ?>
 
 <div class="container">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "includes/functions.php";
+require_once "../includes/functions.php";
 //session_start();
 echo $_POST["user_commentaire"]."<br/>";
 echo $_POST["date_commentaire"]."<br/>";
