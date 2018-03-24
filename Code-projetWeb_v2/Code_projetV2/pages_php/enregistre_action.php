@@ -3,9 +3,9 @@ session_start();
 require_once "../includes/functions.php";
 //session_start();
 echo $_POST["titre"]."<br/>";
-echo $_POST["resume"]."<br/>";
-echo $_POST["contenu"]."<br/>";
-$today = date("Y-m-d");
+echo $_POST["sujet"]."<br/>";
+echo $_POST["lieu"]."<br/>";
+$today = date("d-m-Y");
 //echo $today;
 
 $target_dir = "../images/";
@@ -54,15 +54,15 @@ if ($uploadOk == 0) {
 
 if ($_SESSION['user']->LABEL_ROLE_USER == "ADMIN" || $_SESSION['user']->LABEL_ROLE_USER == "MOD")
 {
-$sql = "insert into articles (AUTEUR_ART,CONTENU_ART,DATE_ART,RESUME_ART,TITRE_ART, IMG_ART, VALIDE_ART) values ('".$_SESSION['user']->NOM_USER."','".$_POST['contenu']."','".$today."','". $_POST['resume']."','" .$_POST['titre']."','" .$target_file."1')";
+    $sql = "insert into actions (SUJET_ACT,DATE_ACT,LIEU_ACT,TITRE_ACT, IMG_ACT, VALIDE_ACT) values ('".$_POST['sujet']."','".$today."','".$_POST['lieu']."','" .$_POST['titre']."','" .$target_file."1')";
 }
 else{
-    $sql = "insert into articles (AUTEUR_ART,CONTENU_ART,DATE_ART,RESUME_ART,TITRE_ART, IMG_ART) values ('".$_SESSION['user']->NOM_USER."','".$_POST['contenu']."','".$today."','". $_POST['resume']."','" .$_POST['titre']."','" .$target_file."')";
+    $sql = "insert into actions (SUJET_ACT,DATE_ACT,LIEU_ACT,TITRE_ACT, IMG_ACT, VALIDE_ACT) values ('".$_POST['sujet']."','".$today."','".$_POST['lieu']."','" .$_POST['titre']."','" .$target_file."')";
 
 }
     $resultat = $connexion->query($sql);
-    //echo $sql;
-    redirect("articles.php");
+    
+    redirect("actions.php");
 
 
 ?>

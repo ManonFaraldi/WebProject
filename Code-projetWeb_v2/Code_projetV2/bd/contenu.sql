@@ -33,7 +33,10 @@ CREATE TABLE `actions` (
   `TITRE_ACT` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `LIEU_ACT` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `DATE_ACT` date NOT NULL,
-  `SUJET_ACT` text COLLATE utf8_unicode_ci NOT NULL
+  `SUJET_ACT` text COLLATE utf8_unicode_ci NOT NULL,
+  `IMG_ACT` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `VALIDE_ACT` tinyint(1) NOT NULL DEFAULT '0',
+  `VISIBLE_ACT` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -41,7 +44,7 @@ CREATE TABLE `actions` (
 --
 
 INSERT INTO `actions` (`ID_ACT`, `TITRE_ACT`, `LIEU_ACT`, `DATE_ACT`, `SUJET_ACT`) VALUES
-(1, 'Réunion d''informatio', 'Saint Aubin', '0000-00-00', 'venez boire des coups et parler de génération.s');
+(1, 'Réunion d''information', 'Saint Aubin', '0000-00-00', 'venez boire des coups et parler de génération.s');
 
 -- --------------------------------------------------------
 

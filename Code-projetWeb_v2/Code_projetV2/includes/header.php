@@ -42,7 +42,7 @@
     ?>
     <a class="navi" href="../pages_php/presentation.php" >Présentation</a><br/>
     <a class="navi" href="../pages_php/actions.php" >Actions</a><br/>
-    <a class="navi" href="../pages_php/articles_pat.php" >Articles</a><br/>
+    <a class="navi" href="../pages_php/articles.php" >Articles</a><br/>
     <a class="navi" href="https://www.generation-s.fr/" >Site national</a><br/>
     <?php
     if (isset($_SESSION['role'])) {

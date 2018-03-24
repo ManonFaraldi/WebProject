@@ -6,7 +6,7 @@ echo $_POST["user_commentaire"]."<br/>";
 echo $_POST["date_commentaire"]."<br/>";
 echo $_POST["id_article"]."<br/>";
 echo $_POST["contenu"]."<br/>";
-$today = date("Y-m-d");
+$today = date("d-m-y");
 //echo $today;
 
 $sql = "insert into commentaires (ID_USER,ID_ART,DATE_COMM,TEXT_COMM) values ('".$_POST["user_commentaire"]."','".$_POST["id_article"]."','".$_POST["date_commentaire"]."','" .$_POST["contenu"]."')";
