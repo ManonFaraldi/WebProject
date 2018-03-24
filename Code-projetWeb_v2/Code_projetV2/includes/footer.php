@@ -1,5 +1,5 @@
 <footer class="footer">
-    <hr width="75%" >
+    <hr width="75%" size= 2>
     
     <body>
         <nav class="container">
@@ -25,7 +25,7 @@
                     }
                     ?>
                         
-                </td><td></td><td>
+                </td><td></td>&nbsp;<td>
                 Site réalisé dans le cadre de l'UE Programmation Web </br> par Vincent BERNARD et Manon FARALDI de l'<a href="https://www.ensc.fr">ENSC</a>.
                 </td></tr>
             </table>
