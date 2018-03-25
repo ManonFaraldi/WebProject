@@ -40,7 +40,7 @@
     <br/><br/>
     <input type="hidden" name="action" value="join" />
 
-	<button type="submit" value="Upload Image" class="btn btn-default btn-block">Proposer</button>
+	<button type="submit" value="submit" class="btn btn-default btn-block">Proposer</button>
 
        
   </form>

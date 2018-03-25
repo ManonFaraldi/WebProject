@@ -27,7 +27,7 @@
         if ( $_SESSION['role'] == "MEMBRE" ||  $_SESSION['role'] == "MOD" ||  $_SESSION['role'] == "ADMIN")
         {
         ?>
-            <a class="bleu" href="logout.php" >Se déconnecter</a><br/>
+            <a class="bleu" href="../pages_php/logout.php" >Se déconnecter</a><br/>
             <a class="rose2" href="../pages_php/tableau_de_bord.php" >Mon profil</a><br/>
 
         <?php

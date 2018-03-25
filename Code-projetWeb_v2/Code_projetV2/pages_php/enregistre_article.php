@@ -1,12 +1,14 @@
 <?php
 session_start();
 require_once "../includes/functions.php";
-//session_start();
+require_once "../includes/header.php";
+
+
 echo $_POST["titre"]."<br/>";
 echo $_POST["resume"]."<br/>";
 echo $_POST["contenu"]."<br/>";
 $today = date("Y-m-d");
-
+ 
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
@@ -48,16 +50,15 @@ if ($uploadOk == 0) {
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
-}
+} 
 
 
-if ($_SESSION['user']->LABEL_ROLE_USER == "ADMIN" || $_SESSION['user']->LABEL_ROLE_USER == "MOD")
+if ($_SESSION['user']->LABEL_ROLE_USER == "ADMIN" && $_SESSION['user']->LABEL_ROLE_USER == "MOD")
 {
 $sql = "insert into articles (AUTEUR_ART,CONTENU_ART,DATE_ART,RESUME_ART,TITRE_ART, IMG_ART, VALIDE_ART) values ('".$_SESSION['user']->NOM_USER."','".$_POST['contenu']."','".$today."','". $_POST['resume']."','" .$_POST['titre']."','" .$target_file."1')";
 }
 else{
     $sql = "insert into articles (AUTEUR_ART,CONTENU_ART,DATE_ART,RESUME_ART,TITRE_ART, IMG_ART) values ('".$_SESSION['user']->NOM_USER."','".$_POST['contenu']."','".$today."','". $_POST['resume']."','" .$_POST['titre']."','" .$target_file."')";
-
 }
     $resultat = $connexion->query($sql);
     

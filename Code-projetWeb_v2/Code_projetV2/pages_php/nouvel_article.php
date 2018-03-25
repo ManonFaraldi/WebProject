@@ -1,6 +1,10 @@
-<?php require_once "../includes/header.php"; ?>
+<?php
+session_start();
+require_once "../includes/functions.php";
+require_once "../includes/header.php";
 
 
+?>
 <div class="container">
 
 <div class="card col-sm-8 offset-sm-3 col-xs-12">
@@ -35,7 +39,7 @@
     <br/><br/>
     <input type="hidden" name="action" value="join" />
 
-	<button type="submit" value="Upload Image" class="btn btn-default btn-block">Enregistrer</button>
+	<button type="submit" value="submit" class="btn btn-default btn-block">Enregistrer</button>
 
        
   </form>
