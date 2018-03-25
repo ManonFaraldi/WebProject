@@ -6,8 +6,8 @@
                 <a href="index.php"><img src="../images/generation_logo.png" alt="Logo Génération.s"></a>
             </td>
             <td>
-                <a class = "navi" href = "apropos.php" > A propos du site <a/><br/>
-                <a class = "navi" href = "gcu.php"> Condition Générales d'Utilisation <a/><br/>
+                <a class = "navi" href = "../pages_php/apropos.php" > A propos du site <a/><br/>
+                <a class = "navi" href = "../pages_php/gcu.php"> Condition Générales d'Utilisation <a/><br/>
                 <a class="navi" href="https://www.generation-s.fr/" >Site national</a><br/>
             </td></tr>
         </table>

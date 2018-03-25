@@ -44,36 +44,17 @@
     <a class="navi" href="../pages_php/actions.php" >Actions</a><br/>
     <a class="navi" href="../pages_php/articles.php" >Articles</a><br/>
     <a class="navi" href="https://www.generation-s.fr/" >Site national</a><br/>
-    <?php
+  
+  <?php
     if (isset($_SESSION['role'])) {
     if ( $_SESSION['role'] == "MOD" ||  $_SESSION['role'] == "ADMIN")
     {
      ?>
-    <a class="navi" href="../_admin/gestion_articles.php" >Gestion Articles</a><br/>
-    <a class="navi" href="../_admin/gestion_actions.php" >Gestion Actions</a><br/>
+    <a class="navi" href="../pages_php/gestion.php" >Gestion du site</a><br/>
     <?php
-    }
-    ?>
-    <?php
-    if (isset($_SESSION['role'])) {
-    if ( $_SESSION['role'] == "ADMIN")
-    {
-        ?>
-        <a class="navi" href="../_admin/gestion_commentaire.php" >Gestion Commentaires</a><br/>
-        <?php
     }
 }
-    ?>
-<?php
-    if ($_SESSION['role'] == "ADMIN")
-    {
-     ?>
-    <a class="navi" href="../_admin/gestion_utilisateurs.php" >Gestion Utilisateurs</a><br/>
-    <?php
-    }
-
-    }
-    ?>
+?>
 </p>
 </td>
 </tr>

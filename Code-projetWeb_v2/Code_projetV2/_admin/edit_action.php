@@ -2,7 +2,7 @@
 session_start();
 require_once "../includes/functions.php"; 
 require_once "../includes/header.php"; 
-$article = getArctionById($_GET['id'],$connexion);
+$article = getActionById($_GET['id'],$connexion);
 
 // accessible seulement si l'utilisateur est autorisé 
 if ((!isset($_SESSION['role'])) || !($_SESSION['role'] == "MOD" ||  $_SESSION['role'] == "ADMIN")) {

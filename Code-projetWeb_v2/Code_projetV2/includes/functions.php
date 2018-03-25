@@ -18,6 +18,34 @@ function getUser($email,$password,$connexion){
 
 }
 
+function getUserById($id,$connexion){
+    $obj = null;
+    $query = "select * from user where ID_USER = $id";
+    $resultat = $connexion->query($query);
+    if($resultat) $obj = $resultat->fetch_object();
+    return $obj;
+
+}
+
+function getArticleById($id,$connexion){
+    $obj = null;
+    $query = "select * from articles where ID_ART = $id";
+    $resultat = $connexion->query($query);
+    if($resultat) $obj = $resultat->fetch_object();
+    return $obj;
+
+}
+
+function getActionsById($id,$connexion){
+    $obj = null;
+    $query = "select * from actions where ID_ACT = $id";
+    $resultat = $connexion->query($query);
+    if($resultat) $obj = $resultat->fetch_object();
+    return $obj;
+
+}
+
+
 // Check if a user is connected
 function isUserConnected() {
     return isset($_SESSION['login']);

@@ -16,7 +16,7 @@ while ($obj = $resultat->fetch_object())
 {
 ?>
                     <div class="col-xs-12 col-sm-4">
-                        <div class="card">
+                        <div class="card-jaune">
                           <?php echo '<a class="img-card" href="actiontest.php?titre='.$obj->ID_ACT.'" class="btn btn-link btn-block">';?>
                             <?php echo '<img src= '.$obj->IMG_ACT.' />' ; ?> 
                           </a>
@@ -62,7 +62,7 @@ if ( $_SESSION['role'] == "MEMBRE" ||  $_SESSION['role'] == "MOD" ||  $_SESSION[
         }
         else 
         {
-        ?>Ajouter une action <?php } ?></button>
+        ?> Ajouter une action <?php } ?></button>
     </a>
 
 </div>
