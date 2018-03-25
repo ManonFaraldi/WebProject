@@ -2,6 +2,14 @@
   font-family: Roboton;
   
 }
+
+hr{
+  margin: 0px auto;
+  width: 85%;
+  height: 4px;
+  background-color: #E00a63;
+}
+
 @font-face{
     font-family:'Volkorn';
     src:url('../lib/volkorn/Webfonts/Volkorn-Italic.woff');
