@@ -22,10 +22,11 @@ $resultat_art = $connexion->query($query);
                 <?php
 while ($obj = $resultat_act->fetch_object())
 {
-?>
+?>  
+
                     <div class="col-xs-12 col-sm-4">
                         <div class="card-jaune">
-                          <?php echo '<a class="img-card" href="actiontest.php?titre='.$obj->ID_ACT.'" class="btn btn-link btn-block">';?>
+                        <?php echo '<a class="img-card" href="actiontest.php?titre='.$obj->ID_ACT.'" class="btn btn-link btn-block">';?>
                             <?php echo '<img src= '.$obj->IMG_ACT.' />' ; ?> 
                           </a>
                             <div class="card-content">
@@ -42,13 +43,19 @@ while ($obj = $resultat_act->fetch_object())
                                 </a>
                             </div>
                         </div>
+                        <div class="clearfix visible-md-block visible-lg-block"></div>
                     </div>
+                    
+                    
 <?php
     while ($obj = $resultat_art->fetch_object())
     {
     ?>
+    
                         <div class="col-xs-12 col-sm-4">
+                        
                             <div class="card">
+                            <div class="clearfix visible-md-block visible-lg-block"></div>
                             <?php echo '<a class="img-card" href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
                                 <?php echo '<img src= '.$obj->IMG_ART.' />' ; ?> 
                             </a>
@@ -67,6 +74,7 @@ while ($obj = $resultat_act->fetch_object())
                                 </div>
                             </div>
                         </div>
+                        <div class="clearfix visible-md-block visible-lg-block"></div>
     <?php
     }
 }

@@ -36,7 +36,7 @@ function getArticleById($id,$connexion){
 
 }
 
-function getActionsById($id,$connexion){
+function getActionById($id,$connexion){
     $obj = null;
     $query = "select * from actions where ID_ACT = $id";
     $resultat = $connexion->query($query);

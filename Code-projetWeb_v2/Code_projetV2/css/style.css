@@ -4,7 +4,7 @@
 }
 
 hr{
-  margin: 0px auto;
+  margin: 10px;
   width: 85%;
   height: 4px;
   background-color: #E00a63;
@@ -63,14 +63,14 @@ text-decoration:none;
 }
 
 .card {
-    margin: +15 auto;
+    margin: +15px auto;
     float: none;
     border-top: 10px solid #cc1E54;
     box-shadow: 0px 5px 25px #aaa;
     
 }
 .card-jaune{
-  margin: +15 auto;
+  margin: +15px auto;
   float: none;
   border-top: 10px solid #f0ad0f;
   box-shadow: 0px 5px 25px #aaa;
