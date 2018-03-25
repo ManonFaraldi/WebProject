@@ -1,6 +1,8 @@
-<?php require_once "../includes/header.php"; ?>
-
-
+<?php 
+session_start();
+require_once "../includes/functions.php"; 
+require_once "../includes/header.php";
+?>
 <div class="container">
 
 
@@ -35,12 +37,10 @@
         </textarea>
 
     
-    
-    
     <br/><br/>
     <input type="hidden" name="action" value="join" />
 
-	<button type="submit" value="submit" class="btn btn-default btn-block">Proposer</button>
+	<button type="submit" value="submit" class="btn btn-default btn-block">En avant !</button>
 
        
   </form>

@@ -1,12 +1,13 @@
 <?php
 session_start();
-require_once "../includes/functions.php";
-//session_start();
+require_once "../includes/functions.php"; 
+require_once "../includes/header.php";
+
 echo $_POST["titre"]."<br/>";
 echo $_POST["sujet"]."<br/>";
 echo $_POST["lieu"]."<br/>";
 $today = date("d-m-Y");
-//echo $today;
+
 
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -49,20 +50,18 @@ if ($uploadOk == 0) {
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
-}
+} 
 
 
-if ($_SESSION['user']->LABEL_ROLE_USER == "ADMIN" || $_SESSION['user']->LABEL_ROLE_USER == "MOD")
+if ($_SESSION['user']->LABEL_ROLE_USER == "ADMIN" && $_SESSION['user']->LABEL_ROLE_USER == "MOD")
 {
     $sql = "insert into actions (SUJET_ACT,DATE_ACT,LIEU_ACT,TITRE_ACT, IMG_ACT, VALIDE_ACT) values ('".$_POST['sujet']."','".$today."','".$_POST['lieu']."','" .$_POST['titre']."','" .$target_file."1')";
 }
 else{
-    $sql = "insert into actions (SUJET_ACT,DATE_ACT,LIEU_ACT,TITRE_ACT, IMG_ACT, VALIDE_ACT) values ('".$_POST['sujet']."','".$today."','".$_POST['lieu']."','" .$_POST['titre']."','" .$target_file."')";
+    $sql = "insert into actions (SUJET_ACT,DATE_ACT,LIEU_ACT,TITRE_ACT, IMG_ACT) values ('".$_POST['sujet']."','".$today."','".$_POST['lieu']."','" .$_POST['titre']."','" .$target_file."')";
 
 }
     $resultat = $connexion->query($sql);
     
     redirect("actions.php");
-
-
 ?>
