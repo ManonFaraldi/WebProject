@@ -63,8 +63,9 @@ if ((!isset($_SESSION['role'])) || !($_SESSION['role'] == "MOD" ||  $_SESSION['r
     <br/><br/>
     <input type="hidden" name="id" id="id"  value="<?php echo $action->ID_ACT; ?>" />
 
-	<button type="submit" class="btn btn-default btn-block">Valider</button>
-    <a href="gestion_actions.php">
+	<button type="submit" class="btn btn-default btn-block">Valider
+        <a href="gestion_actions.php"> </a>
+        <a class="glyphicon glyphicon-ok"></a><br/></button>
   <button type="button" class="btn btn-default btn-block">Annuler</button>
   </a>
 

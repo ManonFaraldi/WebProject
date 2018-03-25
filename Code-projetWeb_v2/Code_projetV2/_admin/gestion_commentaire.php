@@ -23,8 +23,8 @@ $resultat = $connexion->query($query);
     <th>Date</th> 
     <th>Valide</th>
     <th>Visible</th>
-    <th></th>
-    <th></th>
+    <th>Supprimer</th>
+    
   </thead>
   <tbody>
   
@@ -40,6 +40,7 @@ echo "<td>".$obj->ID_ART."</td>";
 echo "<td>".$obj->DATE_ACT."</td>";
 echo "<td>".$obj->VALIDE_ACT."</td>";
 echo "<td>".$obj->VISIBLE_ACT."</td>";
+echo "<td><a href='supprime_commentaire.php?id=".$obj->ID_COMM."'><image src='../images/delete.png'></href></td>";
 ?>
 </tr>
   

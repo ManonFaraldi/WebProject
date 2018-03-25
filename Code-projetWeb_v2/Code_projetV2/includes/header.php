@@ -14,10 +14,10 @@
 <nav class="container">
 <table>
 <tr> <td>
-<a href="index.php"><img src="../images/generation_logo.png" alt="Logo Génération.s"></a>
+<a href="../pages_php/index.php"><img src="../images/generation_logo.png" alt="Logo Génération.s"></a>
 </td>
 <td>
-<a href="index.php"><h1> Les Jeunes Génération.s <br/> Gironde </h1><a>
+<a href="../pages_php/index.php"><h1> Les Jeunes Génération.s <br/> Gironde </h1><a>
 </td>
 <td>
 <p>

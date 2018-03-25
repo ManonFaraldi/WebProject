@@ -14,7 +14,7 @@ redirect("../presentation.php");
 $query = "select * from articles order by DATE_ART desc";
 $resultat = $connexion->query($query);
 ?>
-
+<h1 align="center"> Gestion des articles </h1><br/>
 <div class="container">
 <table class="table">
   <thead class="thead">
@@ -23,8 +23,8 @@ $resultat = $connexion->query($query);
     <th>Date</th> 
     <th>Valide</th>
     <th>Visible</th>
-    <th></th>
-    <th></th>
+    <th>Modifier</th>
+    <th>Supprimer</th>
   </thead>
   <tbody>
   
@@ -40,8 +40,8 @@ echo "<td>".$obj->AUTEUR_ART."</td>";
 echo "<td>".$obj->DATE_ART."</td>";
 echo "<td>".$obj->VALIDE_ART."</td>";
 echo "<td>".$obj->VISIBLE_ART."</td>";
-echo "<td><a href='edit_article.php?id=".$obj->ID_ART."'><image src='/images/edit.png'></href></td>";
-echo "<td><a href='supprime_article.php?id=".$obj->ID_ART."'><image src='/images/delete.png'></href></td>";
+echo "<td><a href='edit_article.php?id=".$obj->ID_ART."'><image src='../images/edit.png'></href></td>";
+echo "<td><a href='supprime_article.php?id=".$obj->ID_ART."'><image src='../images/delete.png'></href></td>";
 ?>
 </tr>
   

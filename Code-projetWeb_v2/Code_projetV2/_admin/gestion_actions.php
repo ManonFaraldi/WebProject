@@ -14,7 +14,7 @@ redirect("../presentation.php");
 $query = "select * from actions order by DATE_ACT desc";
 $resultat = $connexion->query($query);
 ?>
-
+<h1 align="center"> Gestion des actions </h1><br/>
 <div class="container">
 <table class="table">
   <thead class="thead">
@@ -23,8 +23,8 @@ $resultat = $connexion->query($query);
     <th>Date</th> 
     <th>Valide</th>
     <th>Visible</th>
-    <th></th>
-    <th></th>
+    <th>Modifier</th>
+    <th>Supprimer</th>
   </thead>
   <tbody>
   
@@ -40,8 +40,8 @@ echo "<td>".$obj->LIEU_ACT."</td>";
 echo "<td>".$obj->DATE_ACT."</td>";
 echo "<td>".$obj->VALIDE_ACT."</td>";
 echo "<td>".$obj->VISIBLE_ACT."</td>";
-echo "<td><a href='edit_action.php?id=".$obj->ID_ACT."'><image src='/images/edit.png'></href></td>";
-echo "<td><a href='supprime_action.php?id=".$obj->ID_ACT."'><image src='/images/delete.png'></href></td>";
+echo "<td><a href='edit_action.php?id=".$obj->ID_ACT."'><image src='../images/edit.png'></href></td>";
+echo "<td><a href='supprime_action.php?id=".$obj->ID_ACT."'><image src='../images/delete.png'></href></td>";
 ?>
 </tr>
   

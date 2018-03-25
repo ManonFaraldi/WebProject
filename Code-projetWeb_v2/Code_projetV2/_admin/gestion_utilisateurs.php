@@ -24,8 +24,8 @@ $resultat = $connexion->query($query);
     <th>Role</th>
     <th>Code Postal</th>
     <th>Actif</th>
-    <th></th>
-    <th></th>
+    <th>Modifier</th>
+    <th>Supprimer</th>
   </thead>
   <tbody>
   
@@ -42,8 +42,8 @@ echo "<td>".$obj->MAIL_USER."</td>";
 echo "<td>".$obj->LABEL_ROLE_USER."</td>";
 echo "<td>".$obj->ZIPCODE_USER."</td>";
 echo "<td>".$obj->ACTIF_USER."</td>";
-echo "<td><a href='edit_utilisateur.php?id=".$obj->ID_USER."'><image src='/images/edit.png'></href></td>";
-echo "<td><a href='supprime_utilisateur.php?id=".$obj->ID_USER."'><image src='/images/delete.png'></href></td>";
+echo "<td><a href='edit_utilisateur.php?id=".$obj->ID_USER."'><image src='../images/edit.png'></href></td>";
+echo "<td><a href='supprime_utilisateur.php?id=".$obj->ID_USER."'><image src='../images/delete.png'></href></td>";
 ?>
 </tr>
   
