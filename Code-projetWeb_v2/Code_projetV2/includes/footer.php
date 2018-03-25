@@ -3,7 +3,7 @@
     <nav class="container">
         <table>
             <tr> <td>
-                <a href="index.php"><img src="../images/generation_logo.png" alt="Logo Génération.s"></a>
+                <a href="../pages_php/accueil.php"><img src="../images/generation_logo.png" alt="Logo Génération.s"></a>
             </td>
             <td>
                 <a class = "navi" href = "../pages_php/apropos.php" > A propos du site <a/><br/>
