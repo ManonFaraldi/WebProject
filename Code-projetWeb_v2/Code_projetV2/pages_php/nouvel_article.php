@@ -3,8 +3,6 @@
 
 <div class="container">
 
-
-
 <div class="card col-sm-8 offset-sm-3 col-xs-12">
     <br/>
   <h3>Nouvel article</h3>

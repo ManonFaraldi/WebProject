@@ -69,11 +69,11 @@ CREATE TABLE `articles` (
 --
 
 INSERT INTO `articles` (`ID_ART`, `AUTEUR_ART`, `TITRE_ART`, `CONTENU_ART`, `RESUME_ART`, `DATE_ART`, `VALIDE_ART`, `VISIBLE_ART`) VALUES
-(1, 'JJ Rousseau', 'Pulpa Colada', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '0000-00-00', 0, 0),
-(2, 'JJ Rousseau', 'Pulpa Colada2', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '0000-00-00', 0, 0),
-(3, 'JJ Rousseau', 'Pulpa Colada3', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '0000-00-00', 0, 0),
-(4, 'JJ Rousseau', 'Pulpa Colada4', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '0000-00-00', 0, 0),
-(5, 'JJ Rousseau', 'Pulpa Colada5', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '0000-00-00', 0, 0),
+(1, 'JJ Rousseau', 'Pulpa Colada', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '2018-03-18', 0, 0),
+(2, 'JJ Rousseau', 'Pulpa Colada2', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '2018-03-18', 0, 0),
+(3, 'JJ Rousseau', 'Pulpa Colada3', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '2018-03-16', 0, 0),
+(4, 'JJ Rousseau', 'Pulpa Colada4', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '2018-03-20', 0, 0),
+(5, 'JJ Rousseau', 'Pulpa Colada5', 'C''est les meilleurs votez pour eux', 'Votez pour eux !', '2018-03-21', 0, 0),
 (6, 'titi', 'dddddddddddddddddddd', 'ddddddddddddddddddddddddddddddddddd', 'ddddddddddddddddddddddd', '2018-03-22', 0, 0),
 (7, 'titi', 'dddddddddddddddddddd', 'ddddddddddddddddddddddddddddddddddd', 'ddddddddddddddddddddddd', '2018-03-22', 0, 0);
 

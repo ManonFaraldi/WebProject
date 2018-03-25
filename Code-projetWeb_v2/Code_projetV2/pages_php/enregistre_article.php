@@ -6,7 +6,6 @@ echo $_POST["titre"]."<br/>";
 echo $_POST["resume"]."<br/>";
 echo $_POST["contenu"]."<br/>";
 $today = date("Y-m-d");
-//echo $today;
 
 $target_dir = "../images/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -61,8 +60,6 @@ else{
 
 }
     $resultat = $connexion->query($sql);
-    //echo $sql;
+    
     redirect("articles.php");
-
-
 ?>
