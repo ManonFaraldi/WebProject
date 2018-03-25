@@ -44,32 +44,32 @@ while ($obj = $resultat_act->fetch_object())
                         </div>
                     </div>
 <?php
-}
-
-while ($obj = $resultat_art->fetch_object())
-{
-?>
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="card">
-                          <?php echo '<a class="img-card" href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
-                            <?php echo '<img src= '.$obj->IMG_ART.' />' ; ?> 
-                          </a>
-                            <div class="card-content">
-                                <h4 class="card-title">
-                                  <?php echo '<a href="articles_lire.php?titre='.$obj->ID_ART.'">';?><?php printf($obj->TITRE_ART);?></a>
-                                </h4>
-                                <p class="">
-                                  <?php printf($obj->RESUME_ART);?>
-                                </p>
-                            </div>
-                            <div class="card-read-more">
-                            <?php echo '<a href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
-                                    En savoir plus
-                                </a>
+    while ($obj = $resultat_art->fetch_object())
+    {
+    ?>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                            <?php echo '<a class="img-card" href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
+                                <?php echo '<img src= '.$obj->IMG_ART.' />' ; ?> 
+                            </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                    <?php echo '<a href="articles_lire.php?titre='.$obj->ID_ART.'">';?><?php printf($obj->TITRE_ART);?></a>
+                                    </h4>
+                                    <p class="">
+                                    <?php printf($obj->RESUME_ART);?>
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                <?php echo '<a href="articlestest.php?titre='.$obj->ID_ART.'" class="btn btn-link btn-block">';?>
+                                        En savoir plus
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-<?php
+    <?php
+    }
 }
 ?>
+
 <?php require_once "../includes/footer.php"; ?>
