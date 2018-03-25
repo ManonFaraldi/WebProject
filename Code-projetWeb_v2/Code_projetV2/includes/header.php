@@ -58,8 +58,11 @@
     if (isset($_SESSION['role'])) {
     if ( $_SESSION['role'] == "ADMIN")
     {
+        ?>
         <a class="navi" href="../_admin/gestion_commentaire.php" >Gestion Commentaires</a><br/>
+        <?php
     }
+}
     ?>
 <?php
     if ($_SESSION['role'] == "ADMIN")

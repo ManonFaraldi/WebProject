@@ -6,7 +6,7 @@ require_once "../includes/header.php";
 echo $_POST["titre"]."<br/>";
 echo $_POST["sujet"]."<br/>";
 echo $_POST["lieu"]."<br/>";
-$today = date("d-m-Y");
+$today = date("Y-m-d");
 
 
 $target_dir = "../images/";

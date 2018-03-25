@@ -40,8 +40,8 @@ echo "<td>".$obj->LIEU_ACT."</td>";
 echo "<td>".$obj->DATE_ACT."</td>";
 echo "<td>".$obj->VALIDE_ACT."</td>";
 echo "<td>".$obj->VISIBLE_ACT."</td>";
-echo "<td><a href='edit_action.php?id=".$obj->ID_ART."'><image src='/images/edit.png'></href></td>";
-echo "<td><a href='supprime_action.php?id=".$obj->ID_ART."'><image src='/images/delete.png'></href></td>";
+echo "<td><a href='edit_action.php?id=".$obj->ID_ACT."'><image src='/images/edit.png'></href></td>";
+echo "<td><a href='supprime_action.php?id=".$obj->ID_ACT."'><image src='/images/delete.png'></href></td>";
 ?>
 </tr>
   

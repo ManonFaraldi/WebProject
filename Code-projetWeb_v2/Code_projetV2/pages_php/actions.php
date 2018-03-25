@@ -29,7 +29,7 @@ while ($obj = $resultat->fetch_object())
                                 </p>
                             </div>
                             <div class="card-read-more">
-                            <?php echo '<a href="articlestest.php?titre='.$obj->ID_ACT.'" class="btn btn-link btn-block">';?>
+                            <?php echo '<a href="actionstest.php?titre='.$obj->ID_ACT.'" class="btn btn-link btn-block">';?>
                                     En savoir plus
                                 </a>
                             </div>
